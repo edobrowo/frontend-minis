@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Unicode Decoder</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="content">
+      <header class="visualizer-header">Unicode Decoder</header>
+      <section>
+        Unicode is a character indexing standard. Indices are called code points.
+        Code points are converted to bytes according to an encoding scheme. The most common Unicode encoding scheme
+        is UTF-8. It uses a prefix-free notation to support forward and backward decoding.
+        The UTF-8 encoding process is illustrated below.
+      </section>
+      <main class="visualizer">
+        <section class="visualizer-section">
+          1. Begin with (almost) any character supported by the Unicode standard
+          <input id="input-character" class="visualizer-section-result"></input>
+        </section>
+        <section class="visualizer-section">
+          2. Encoding is accomplished with the character's code point
+          <section id="code-point-number" class="visualizer-section-result">...</section>
+        </section>
+        <section class="visualizer-section">
+          3. In particular, we use the code point's bit representation
+          <section id="code-point-bits" class="visualizer-section-result">...</section>
+        </section>
+        <section id="bits" class="visualizer-section">
+          4. In UTF-8, code point bits are rearranged into 1 to 4 bytes
+          <section id="encoding-bits" class="visualizer-section-result">...</section>
+        </section>
+        <section class="visualizer-section">
+          The encoding's hex representation:
+          <section id="encoding-hex" class="visualizer-section-result">...</section>
+        </section>
+      </main>
+      <script src="main.js"></script>
+    </div>
+  </body>
+</html>

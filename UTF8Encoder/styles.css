@@ -1,0 +1,58 @@
+:root {
+  --near-white: #f0f0f0;
+  --dark-grey: #1b1b1b;
+  --mid-grey-darker: #202020;
+  --mid-grey-dark: #2a2a2a;
+  --mid-grey: #343434;
+  --mid-grey-lighter: #505050;
+  --light-grey: #858585;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: var(--dark-grey);
+  font: 16px Helvetica;
+  color: var(--near-white);
+}
+
+.content {
+  display: grid;
+  gap: 16px;
+  margin: 8%;
+}
+
+.visualizer-header {
+  font-size: 3em;
+}
+
+.visualizer {
+  display: grid;
+  gap: 8px;
+}
+
+.visualizer-section {
+  display: grid;
+  gap: 4px;
+  padding: 10px;
+  background: var(--mid-grey-darker);
+}
+
+.visualizer-section-result {
+  display: block;
+  padding: 10px;
+  background: var(--mid-grey-dark);
+  font: 1.2em "Courier New";
+  width: 50%;
+}
+
+.visualizer-section-input:focus {
+  outline: none;
+  background: var(--mid-grey-lighter);
+}
+
+#input-character {
+  background: var(--mid-grey);
+  border: solid var(--light-grey) 2px;
+}
