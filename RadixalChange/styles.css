@@ -1,0 +1,93 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --near-white: #ddd;
+  --grey-light: #48484d;
+  --grey-mid: #222232;
+  --grey-dark: #161626;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+  background-color: var(--grey-dark);
+  font: 10px "Inconsolata", system-ui;
+  color: var(--near-white);
+}
+
+
+.main {
+  max-width: 600px;
+}
+
+header {
+  border: 3px solid var(--grey-mid);
+  font-size: 6em;
+  text-align: center;
+}
+
+.input-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: 15px 0px;
+  gap: 10px;
+}
+
+input {
+  width: 100%;
+  background-color: var(--grey-light);
+  border: none;
+  padding: 5px;
+  text-align: center;
+  font: 1.5em "Inconsolata", system-ui;
+  color: var(--near-white);
+}
+
+input:focus {
+  outline-width: 0;
+}
+
+
+.radix {
+  font-size: 4em;
+}
+
+.number {
+  grid-column: 1 / 3;
+  font-size: 3em;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  margin: 20px;
+  background-color: var(--grey-dark);
+}
+
+
+@media only screen and (max-width: 620px) {
+  .radix {
+    font-size: 3em;
+  }
+  .number {
+    font-size: 2.5em;
+  }
+}
+
+
+@media only screen and (max-height: 360px) {
+  footer {
+    display: none;
+  }
+}
