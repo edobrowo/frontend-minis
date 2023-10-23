@@ -1,2 +1,2 @@
-# SmallWebDeveloper
-Tiny projects created in my pursuit to learn web development
+# Frotend minis
+Mini frontend projects written with vanilla HTML/CSS/JS.
