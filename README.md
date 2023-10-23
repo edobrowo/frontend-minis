@@ -1,2 +1,2 @@
 # Frotend minis
-Mini frontend projects written with vanilla HTML/CSS/JS.
+Mini frontend projects created with vanilla HTML/CSS/JS.
